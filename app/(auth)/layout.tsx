@@ -3,6 +3,8 @@ import { ReactNode } from "react";
 
 import SocialAuthForm from "@/components/forms/SocialAuthForm";
 
+// import SocialAuthForm from "@/components/forms/SocialAuthForm";
+
 const AuthLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-auth-light bg-cover bg-center bg-no-repeat px-4 py-10 dark:bg-auth-dark">
