@@ -5,7 +5,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import ROUTES from "@/constants/routes";
 
-import NavLinks from "./NavLinks";
+import NavLinks from "./navbar/NavLinks";
 
 const LeftSidebar = () => {
   return (

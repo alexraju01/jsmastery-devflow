@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
 
-import LeftSidebar from "@/components/navigation/navbar/LeftSidebar";
+import LeftSidebar from "@/components/navigation/LeftSidebar";
 import Navbar from "@/components/navigation/navbar/Navbar";
+import RightSidebar from "@/components/navigation/RightSidebar";
 // import { Menu } from "lucide-react";
 
 const Layout = ({ children }: { children: ReactNode }) => {
@@ -13,6 +14,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <section className="flex min-h-screen flex-1 flex-col px-6 pb-6 pt-36 max-md:pb-14 sm:px-14">
           <div className="mx-auto w-full max-w-5xl">{children}</div>
         </section>
+        <RightSidebar />
       </div>
     </main>
   );
