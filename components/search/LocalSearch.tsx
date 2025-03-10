@@ -17,7 +17,7 @@ interface Props {
 }
 
 const LocalSearch = ({ route, imgSrc, placeholder, otherClasses }: Props) => {
-  const pathname = usePathname();
+  const pathname = usePathname();   // requires use client
   const router = useRouter();
   const searchParams = useSearchParams();
   const query = searchParams.get("query") || "";
