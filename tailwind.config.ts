@@ -40,7 +40,6 @@ const config: Config = {
       backgrounImage: {
         "auth-dark": 'url("/images/auth-dark.png")',
         "auth-light": 'url("/images/auth-light.png")',
-
       },
       boxShadow: {
         "light-100":
@@ -63,7 +62,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
 
 export default config;
