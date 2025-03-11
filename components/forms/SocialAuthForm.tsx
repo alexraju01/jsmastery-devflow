@@ -19,7 +19,7 @@ const SocialAuthForm = () => {
         redirect: false,
       });
     } catch (error) {
-      console.log(error);
+      console.error(error);
 
       toast({
         title: "sign-In failed",
