@@ -54,8 +54,8 @@ const questions = [
 
 const test = async () => {
   try {
-    throw new Error("Test error");
-    // await dbConnect();
+    await dbConnect();
+    // throw new Error("Test error");
   } catch (error) {
     return handleError(error);
   }
@@ -100,5 +100,7 @@ const Home = async ({ searchParams }: SearchParams) => {
     </>
   );
 };
+
+
 
 export default Home;
