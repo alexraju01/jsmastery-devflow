@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import ROUTES from "@/constants/routes";
 import { api } from "@/lib/api";
 import handleError from "@/lib/handlers/error";
-import dbConnect from "@/lib/mongoose";
 
 interface SearchParams {
   searchParams: Promise<{ [key: string]: string }>;
