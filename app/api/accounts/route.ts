@@ -24,7 +24,6 @@ export async function POST(request: Request) {
     const body = await request.json();
 
     const validatedData = AccountSchema.safeParse(body);
-    console.log(validatedData);
 
     const existingAccount = await Account.findOne({
       provider: validatedData.data?.provider,

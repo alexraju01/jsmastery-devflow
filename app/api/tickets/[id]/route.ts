@@ -31,7 +31,6 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
 
 export async function DELETE(_: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  console.log(await params);
   //   if (!id) return NextResponse.json({ error: "Ticket id is required" });
 
   const parsedId = Number(id);
